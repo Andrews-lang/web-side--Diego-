@@ -1,0 +1,271 @@
+/* ==========================================================================
+   TEMA: Dark Hero & Clean Cards (Inspirado en la imagen de referencia)
+   ========================================================================== */
+:root {
+    --bg-dark: #1a1a1a;          /* Fondo oscuro del encabezado */
+    --bg-light: #f3f4f6;         /* Fondo gris muy claro para el resto */
+    --text-white: #ffffff;
+    --text-gray-light: #a1a1aa;  /* Texto secundario oscuro */
+    --text-dark: #111827;        /* Texto principal claro */
+    --text-gray-dark: #4b5563;   /* Texto secundario claro */
+    --accent-color: #f43f5e;     /* Color rosa/rojo del botón */
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   NAVEGACIÓN SUPERIOR
+   ========================================================================== */
+.navbar {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--text-gray-light);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--text-white);
+}
+
+/* ==========================================================================
+   HERO SECTION (Fondo Oscuro)
+   ========================================================================== */
+.hero-section {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    padding: 80px 5% 120px 5%;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 2;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: var(--text-gray-light);
+    margin: 0;
+    max-width: 650px;
+}
+
+.hero-action {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.action-text {
+    color: var(--text-gray-light);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Botón estilo pastilla rojo/rosa como en la imagen */
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL Y TARJETAS
+   ========================================================================== */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5% 80px 5%;
+}
+
+.section-title {
+    text-align: center;
+    padding: 50px 0 30px 0;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    color: var(--text-gray-dark);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Diseño de Tarjeta estilo "Inspiration" de la imagen */
+.content-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.content-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Bloques de color que simulan las imágenes de la referencia */
+.card-image {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-icon {
+    font-size: 40px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Degradados temáticos IA */
+.bg-gradient-1 { background: linear-gradient(135deg, #f87171, #f43f5e); }
+.bg-gradient-2 { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
+.bg-gradient-3 { background: linear-gradient(135deg, #60a5fa, #3b82f6); }
+
+.card-body {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h3 {
+    font-size: 18px;
+    color: var(--text-dark);
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: var(--text-gray-dark);
+    margin: 0 0 15px 0;
+    flex-grow: 1;
+}
+
+.card-tag {
+    font-size: 11px;
+    color: var(--text-gray-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+/* Tarjeta ancha para las conclusiones */
+.full-width {
+    grid-column: span 3;
+}
+
+.conclusions-body {
+    padding: 40px;
+    background: linear-gradient(to right, #ffffff, #f8fafc);
+}
+.conclusions-body h3 { font-size: 22px; }
+.conclusions-body p { font-size: 15px; }
+.highlight-tag { color: var(--accent-color); font-weight: bold; border-top: none; padding-top: 0; }
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-gray-light);
+    font-size: 13px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ==========================================================================
+   RESPONSIVO (Móviles)
+   ========================================================================== */
+@media (max-width: 900px) {
+    .hero-content { flex-direction: column; gap: 30px; }
+    .hero-text h1 { font-size: 32px; }
+    .hero-action { align-items: flex-start; text-align: left; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .full-width { grid-column: span 1; }
+    .nav-links { display: none; } /* Simplificación para móvil */
+}
+   Bloques Destacados
+   ========================================================================== */
+.destacado {
+    background: rgba(37, 244
