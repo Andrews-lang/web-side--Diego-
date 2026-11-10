@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Curriculum - Diego Rodríguez</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 30px;
+        }
+
+        .contenedor {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            margin-top: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid black;
+        }
+
+        footer a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <header>
+        <h1>Diego Rodríguez</h1>
+        <p>Futuro Ingeniero Mecánico Automotriz</p>
+    </header>
+
+    <section>
+        <h2>Perfil personal</h2>
+        <p>
+            Soy Diego Andrés Rodríguez y quiero ser profesional en
+            Ingeniería Mecánica Automotriz, enfocando mi formación
+            en el sector automotriz y desarrollando mis conocimientos
+            para aportar soluciones innovadoras a la industria.
+        </p>
+    </section>
+
+    <section>
+        <h2>Experiencia laboral</h2>
+        <h3>Renault (Sofasa)</h3>
+        <h4>Operador automotriz</h4>
+        <p>
+            Desde mis 13 años he experimentado mi vida laboral
+            en el sector informal. Me desempeño como mecánico
+            en automotores.
+        </p>
+    </section>
+
+    <section>
+        <h2>Formación académica</h2>
+        <ul>
+            <li>Bachiller de la IEF</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Habilidades y cualidades</h2>
+        <ul>
+            <li>Responsabilidad</li>
+            <li>Trabajo en equipo</li>
+            <li>Comunicación efectiva</li>
+            <li>Atención al detalle</li>
+            <li>Resolución de problemas</li>
+            <li>Organización</li>
+            <li>Puntualidad</li>
+            <li>Adaptabilidad</li>
+            <li>Paciencia</li>
+            <li>Capacidad de aprendizaje</li>
+            <li>Iniciativa</li>
+            <li>Manejo del estrés</li>
+            <li>Compromiso</li>
+        </ul>
+    </section>
+
+    <footer>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+    </footer>
+
+</div>
+
+</body>
+</html>
